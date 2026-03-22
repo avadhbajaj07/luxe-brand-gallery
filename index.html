@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxe Brand Campaigns</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #0f172a; /* dark slate */
+            color: #f8fafc;
+        }
+        .image-card {
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .image-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 25px 30px -5px rgba(0, 0, 0, 0.6), 0 10px 10px -5px rgba(0, 0, 0, 0.4);
+            border-color: #38bdf8; /* light blue border on hover */
+        }
+        /* Make images square/same aspect ratio */
+        .img-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 100%; /* 1:1 Aspect Ratio */
+            overflow: hidden;
+        }
+        .img-container img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.7s ease;
+        }
+        .image-card:hover .img-container img {
+            transform: scale(1.05); /* Slight zoom on hover */
+        }
+    </style>
+</head>
+<body class="min-h-screen pt-16 pb-24 px-6 md:px-12 lg:px-24 font-sans bg-[url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%231e293b\' fill-opacity=\'0.4\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]">
+    <header class="text-center mb-20">
+        <h1 class="text-5xl md:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-indigo-400 to-fuchsia-400 tracking-tight pb-2 drop-shadow-lg">LUXE STAR CAMPAIGNS</h1>
+        <p class="mt-6 text-slate-300 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">Exclusive 2K Editorial Gallery featuring Alia Bhatt & international models representing premier luxury brands.</p>
+    </header>
+
+    <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-7xl mx-auto">
+        <!-- Card 1 -->
+        <article class="image-card bg-slate-900/80 backdrop-blur-sm rounded-[2rem] overflow-hidden border border-slate-700/50 shadow-2xl">
+            <div class="img-container">
+                <img src="assets/alia_bhatt_handbag.png" alt="Alia Bhatt with Luxury Handbag" loading="lazy">
+            </div>
+            <div class="p-8">
+                <span class="text-xs font-bold text-sky-400 tracking-widest uppercase mb-3 block">Fashion & Leather</span>
+                <h2 class="text-3xl font-bold text-white mb-3">Parisian Elegance</h2>
+                <p class="text-slate-400 leading-relaxed">Featuring a burgundy leather handbag modeled on the iconic streets of Paris.</p>
+            </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="image-card bg-slate-900/80 backdrop-blur-sm rounded-[2rem] overflow-hidden border border-slate-700/50 shadow-2xl">
+            <div class="img-container">
+                <img src="assets/alia_bhatt_perfume.png" alt="Alia Bhatt with Crystal Perfume" loading="lazy">
+            </div>
+            <div class="p-8">
+                <span class="text-xs font-bold text-fuchsia-400 tracking-widest uppercase mb-3 block">Fragrance & Beauty</span>
+                <h2 class="text-3xl font-bold text-white mb-3">Celestial Bouquet</h2>
+                <p class="text-slate-400 leading-relaxed">A glamorous silver sequin gown paired with an elegant crystal perfume bottle.</p>
+            </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="image-card bg-slate-900/80 backdrop-blur-sm rounded-[2rem] overflow-hidden border border-slate-700/50 shadow-2xl">
+            <div class="img-container">
+                <img src="assets/alia_bhatt_watch.png" alt="Alia Bhatt with Luxury Watch" loading="lazy">
+            </div>
+            <div class="p-8">
+                <span class="text-xs font-bold text-amber-400 tracking-widest uppercase mb-3 block">Horology</span>
+                <h2 class="text-3xl font-bold text-white mb-3">Executive Luxury</h2>
+                <p class="text-slate-400 leading-relaxed">Sleek modern business suit showcasing a metallic luxury brand watch.</p>
+            </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="image-card bg-slate-900/80 backdrop-blur-sm rounded-[2rem] overflow-hidden border border-slate-700/50 shadow-2xl">
+            <div class="img-container">
+                <img src="assets/alia_bhatt_fitness.png" alt="Alia Bhatt in Premium Activewear" loading="lazy">
+            </div>
+            <div class="p-8">
+                <span class="text-xs font-bold text-emerald-400 tracking-widest uppercase mb-3 block">Active Lifestyle</span>
+                <h2 class="text-3xl font-bold text-white mb-3">Aurora Energy</h2>
+                <p class="text-slate-400 leading-relaxed">High-performance branded activewear and a glowing futuristic energy drink.</p>
+            </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="image-card bg-slate-900/80 backdrop-blur-sm rounded-[2rem] overflow-hidden border border-slate-700/50 shadow-2xl">
+            <div class="img-container">
+                <img src="assets/generic_model_lingerie.png" alt="Model in Silk Lingerie" loading="lazy">
+            </div>
+            <div class="p-8">
+                <span class="text-xs font-bold text-rose-400 tracking-widest uppercase mb-3 block">Intimates</span>
+                <h2 class="text-3xl font-bold text-white mb-3">Emerald Silk</h2>
+                <p class="text-slate-400 leading-relaxed">High-end editorial photoshoot featuring luxurious silk intimates for an exclusive campaign.</p>
+            </div>
+        </article>
+
+    </main>
+
+    <footer class="mt-32 text-center text-slate-500 border-t border-slate-800/50 pt-10">
+        <p>&copy; 2026 Luxe Brand Campaigns. Created for fast deployment on Vercel.</p>
+    </footer>
+</body>
+</html>
